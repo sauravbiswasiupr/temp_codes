@@ -50,4 +50,13 @@ Please note that this key called training_set_hidden was used by mistake for the
  >>f=h5py.File("test_set_hidden_rep_red.h5") 
  >>test_set_hidden_rep = f["test_set_hidden"][:] 
 
+The labels have been seperated into three distinct .h5 files 
+labels_training.h5 , labels_validation.h5 , labels_test.h5 
+
+So you can read any file using 
+>>f = h5py.File("labels_training.h5")
+>>training=f["training"] 
+
+Similarly use f["validation"] and f["test"] for respective files 
+
 ##TODO : Update more as more code is added
