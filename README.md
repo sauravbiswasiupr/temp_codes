@@ -55,8 +55,8 @@ labels_training.h5 , labels_validation.h5 , labels_test.h5
 
 So you can read any file using 
 >>f = h5py.File("labels_training.h5")
->>training=f["training"] 
+>>training=f["labels"] 
 
-Similarly use f["validation"] and f["test"] for respective files 
+
 
 ##TODO : Update more as more code is added
